@@ -16,12 +16,21 @@
 		<br><br>
 		
 		<form:select path="country">
-			<form:option value="Brazil" label="Brazil" />
-			<form:option value="France" label="France" />
-			<form:option value="Germany" label="Germany" />
+			<form:options items="${student.countryOptions}" />
 		</form:select>
 		
 		<br><br>
+		
+		Favorite Language:
+		Java <form:radiobutton path="favoriteLanguage" value="Java" />
+		Python <form:radiobutton path="favoriteLanguage" value="Python" />
+		Ruby <form:radiobutton path="favoriteLanguage" value="Ruby" />
+		
+		<br><br>
+		
+		Operating Systems:
+		macOS <form:checkbox path="operatingSystems" value="macOS" />
+		Windows <form:checkbox path="operatingSystems" value="windows" />
 		
 		<input type="submit" value="submit" />
 	</form:form>
