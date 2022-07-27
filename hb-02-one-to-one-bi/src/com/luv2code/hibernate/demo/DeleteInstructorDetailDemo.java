@@ -25,7 +25,9 @@ public class DeleteInstructorDetailDemo {
 
 			session.beginTransaction();
 			
-			InstructorDetail detail = session.get(InstructorDetail.class, 2);
+			InstructorDetail detail = session.get(InstructorDetail.class, 3);
+			
+			detail.getInstructor().setInstructorDetail(null);
 			
 			session.delete(detail);
 			
