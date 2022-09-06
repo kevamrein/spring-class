@@ -38,7 +38,7 @@ public class MyDemoLoggingAspect {
 		} catch (Exception ex) {
 			logger.warning("Around exception: " + ex.getMessage());
 			
-			result = "Exception default message";
+			throw ex;
 		}
 		
 		long end = System.currentTimeMillis();
