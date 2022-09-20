@@ -15,7 +15,7 @@
 
 <body>
 	<h3>My Custom Login Page</h3>
-	<form action="${pageContext.request.contextPath}/authenticateTheUser" method="POST">
+	<form:form action="${pageContext.request.contextPath}/authenticateTheUser" method="POST">
 		<c:if test="${param.error != null}">
 			<i class="failed">You've entered an invalid username or password</i>
 		</c:if>
@@ -31,8 +31,6 @@
 			Password: <input type="password" name="password" />
 		</p>
 		<input type="submit" value="Login"/>
-		
-		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-	</form>
+	</form:form>
 </body>
 </html>

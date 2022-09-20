@@ -1,11 +1,11 @@
 <html>
 <head>
-	<title>Leaders home page</title>
+	<title>Systems home page</title>
 </head>
 <body>
-	<h2>Leaders Home Page</h2>
+	<h2>Systems Home Page</h2>
 	<p>
-		LEADERS PAGE!!
+		Systems PAGE!!
 	</p>
 	<p>
 		<a href="${pageContext.request.contextPath}/">Home</a>

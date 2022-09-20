@@ -23,6 +23,10 @@
 			<p>
 				<a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
 			</p>
+			
+			<p>
+				<a href="${pageContext.request.contextPath}/systems">Systems Info</a>
+			</p>
 		</hr>
 		
 		<form:form action="${pageContext.request.contextPath}/logout" method="POST">
