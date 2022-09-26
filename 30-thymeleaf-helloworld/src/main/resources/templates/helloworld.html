@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Hello</title>
+		<link rel="stylesheet" th:href="@{/css/demo.css}" />
+	</head>
+	<body>
+		<p class="green" th:text="'The time on server is: ' + ${theDate}" />
+	</body>
+</html>
